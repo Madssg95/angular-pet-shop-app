@@ -1,0 +1,35 @@
+<div class="container"
+     fxLayout="column"
+     fxFill
+     fxLayoutGap="10px">
+  <div fxLayout="row">
+    <button routerLink="/pet" mat-mini-fab color="primary"><i class="material-icons">chevron_left</i></button>
+  </div>
+  <div fxLayout="row">
+    <div class="col-6 offset-5">
+      <form [formGroup]="petForm" (ngSubmit)="update()" style="margin-top: 2%">
+        <div class="row">
+          <label style="margin-right: 1%; font-size: larger">
+            Name:
+            <input type="text" formControlName="name">
+          </label>
+        </div>
+        <div class="row">
+          <label style="margin-right: 1%; font-size: larger">
+            Type:
+            <input type="text" formControlName="type">
+          </label>
+        </div>
+        <div class="row">
+          <label style="margin-right: 1%; font-size: larger">
+            Price:
+            <input type="text" formControlName="price">
+          </label>
+        </div>
+        <div class="col-6 offset-1">
+          <button mat-mini-fab color="primary" type="submit" class="btn btn-success"><i class="material-icons">edit</i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="container"
+     fxLayout="column"
+     fxFill
+     fxLayoutGap="10px">
+  <div fxLayout="row">
+    <button routerLink="/login" mat-mini-fab color="primary"><i class="material-icons">chevron_left</i></button>
+  </div>
+  <div fxLayout="row">
+    <div class="col-6 offset-5">
+      <form [formGroup]="userForm" (ngSubmit)="create()" style="margin-top: 2%">
+        <div class="row">
+          <label style="margin-right: 1%; font-size: larger">
+            Username:
+            <input type="text" formControlName="username">
+          </label>
+        </div>
+        <div class="row">
+          <label style="margin-right: 1%; font-size: larger">
+            Password:
+            <input type="password" formControlName="password">
+          </label>
+        </div>
+        <div class="col-6 offset-1">
+          <button mat-mini-fab color="primary" type="submit" class="btn btn-success"><i class="material-icons">add</i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

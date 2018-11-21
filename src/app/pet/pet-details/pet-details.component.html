@@ -1,0 +1,24 @@
+<div class="container"
+     fxLayout="column"
+     fxFill
+     fxLayoutGap="30px">
+  <div fxLayout="row">
+    <button routerLink="/pet" mat-mini-fab color="primary"><i class="material-icons">chevron_left</i></button>
+  </div>
+  <div fxLayout="row" *ngIf="pet">
+    <div class="col-6 offset-3">
+  <ul class="collection with-header">
+    <li class="collection-header"><h4>Pet Details</h4></li>
+    <li class="collection-item">ID: {{pet.id}}</li>
+    <li class="collection-item">Name: {{pet.name}}</li>
+    <li class="collection-item">Type: {{pet.type}}</li>
+    <li class="collection-item">Price: {{pet.price}}</li>
+  </ul>
+    </div>
+</div>
+<div *ngIf="!pet">
+  <h2>Pet not found</h2>
+</div>
+</div>
+
+

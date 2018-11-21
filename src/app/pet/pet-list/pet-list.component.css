@@ -1,0 +1,13 @@
+mat-card {
+  margin: 1%;
+}
+
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+button{
+  margin-right: 5%;
+}

@@ -1,0 +1,40 @@
+<div class="row">
+<div class="col s12">
+  <p *ngIf="errormessage; else elseBlock" class="alert alert-danger">{{errormessage}}</p>
+  <div class="card-panel">
+    <span class="grey-text text-darken-2" style="font-size: xx-large">You're logged in as {{username}}!</span>
+    <p></p>
+  <p><a [routerLink]="['/login']" style="margin-top: 10%; font-size: 20px">Logout</a></p>
+</div>
+  <mat-divider></mat-divider>
+</div>
+  </div>
+<div class="row">
+  <div style="text-align: center; width: 100%">
+    <iframe width="820" height="630"
+            src="https://www.youtube.com/embed/3t6bLugtJkQ">
+    </iframe>
+  </div>
+</div>
+<div class="row">
+  <div class="col s6">
+    <div class="card-panel">
+      <span class="grey-text text-darken-2" style="font-size: xx-large">Go and see the pets!</span>
+      <p></p>
+      <p><a [routerLink]="['/pet']" style="margin-top: 10%; font-size: 20px">All of our pets</a></p>
+      <img src="../../../assets/pet3.jpg" style="width:480px;height:200px;">
+    </div>
+    <mat-divider></mat-divider>
+  </div>
+  <div class="col s6">
+    <div class="card-panel">
+      <span class="grey-text text-darken-2" style="font-size: xx-large">Go and see the owners!</span>
+      <p></p>
+      <p><a [routerLink]="['/owner']" style="margin-top: 10%; font-size: 20px">All of our owners</a></p>
+      <img src="https://americanenglish.state.gov/files/ae/styles/full-width-billboard-480x200/public/ae_billboard_images/480x200-friends-taking-a-picture.jpg?itok=JXiTPWgi">
+    </div>
+    <mat-divider></mat-divider>
+  </div>
+</div>
+
+

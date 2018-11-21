@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "../angular-pet-shop-app/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []

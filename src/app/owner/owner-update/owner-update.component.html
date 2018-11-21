@@ -1,0 +1,41 @@
+<div class="container"
+     fxLayout="column"
+     fxFill
+     fxLayoutGap="10px">
+  <div fxLayout="row">
+    <button routerLink="/owner" mat-mini-fab color="primary"><i class="material-icons">chevron_left</i></button>
+  </div>
+  <div fxLayout="row">
+    <div class="col-6 offset-5">
+      <form [formGroup]="ownerForm" (ngSubmit)="update()" style="margin-top: 2%">
+        <div class="row">
+          <label style="margin-right: 1%; font-size: larger">
+            Firstname:
+            <input type="text" formControlName="firstName">
+          </label>
+        </div>
+        <div class="row">
+          <label style="margin-right: 1%; font-size: larger">
+            Lastname:
+            <input type="text" formControlName="lastName">
+          </label>
+        </div>
+        <div class="row">
+          <label style="margin-right: 1%; font-size: larger">
+            Address:
+            <input type="text" formControlName="address">
+          </label>
+        </div>
+        <div class="row">
+          <label style="margin-right: 1%; font-size: larger">
+            Phonenumber:
+            <input type="text" formControlName="phoneNumber">
+          </label>
+        </div>
+        <div class="col-6 offset-1">
+          <button mat-mini-fab color="primary" type="submit" class="btn btn-success"><i class="material-icons">edit</i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
